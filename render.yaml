@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: russian-world-game
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7800671282:AAEhfK3uG1inYfjjzl67bYtVMTUC1yMURjk
+      - key: NODE_ENV
+        value: production
